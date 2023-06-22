@@ -72,7 +72,7 @@ class EditarVacante extends Component
         $vacante->save();
 
         // Redireccionar
-        session()->flash('mensaje', 'La vacante se actualizó correctamente');
+        session()->flash('mensaje', 'La vacante se actualizó correctamente, vuelve a actualizar');
         return redirect()->route('vacantes.index');
     }
 
